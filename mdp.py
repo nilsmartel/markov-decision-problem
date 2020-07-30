@@ -63,6 +63,8 @@ def q(problem, state, action, iter):
 
 
 
+# Iterations shouldn't be hardcoded,
+# but rather be dependent on the difference between two iterations.
 ITERATIONS = 100
 
 # optimal policy
@@ -86,4 +88,3 @@ problem = MagicTrainProblem(200, 180, 0)
 policy = opt_policy(problem)
 
 print(policy)
-
